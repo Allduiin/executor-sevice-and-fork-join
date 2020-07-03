@@ -7,8 +7,8 @@ import org.junit.Test;
 import project.SumForkJoin;
 
 public class ForkJoinTest {
-    private static final long SUM_OF_NUMBERS = 500000500000L;
-    private static final long AMOUNT_OF_NUMBERS = 1000000L;
+    private static final long SUM_OF_NUMBERS = 500_000_500_000L;
+    private static final long AMOUNT_OF_NUMBERS = 1_000_000L;
     private List<Long> numbers;
 
     @Before

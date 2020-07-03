@@ -22,9 +22,8 @@ public class SumForkJoin extends RecursiveTask<Long> {
                     .stream()
                     .mapToLong(ForkJoinTask::join)
                     .sum();
-        } else {
-            return numbers.stream().reduce(0L, Long::sum);
         }
+        return numbers.stream().reduce(0L, Long::sum);
     }
 
     private Collection<RecursiveTask<Long>> createSubTasks() {
